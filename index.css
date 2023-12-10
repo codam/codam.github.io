@@ -1,7 +1,8 @@
 body {
-    background-color: black;
+    background-color: #00012F;
     color: white;
-    font-size: 16px;
+    font-size: 18px;
+    font-family: Avenir Next, sans-serif;
     text-align: center;
 }
 
@@ -15,9 +16,11 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
+    max-width: 810px;
 }
+
 
 .list-item {
     background: linear-gradient(45deg, #f8852d, #592bff);
@@ -27,7 +30,7 @@ body {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 1.3em;
+    /* font-size: 1.1em; */
     margin: 20px 20px;
     cursor: pointer;
     border-radius: 10px;
@@ -45,4 +48,13 @@ body {
 .item-link {
     text-decoration: none;
     color: white;
+}
+
+@media (max-width: 480px) {
+    .list-item {
+        margin: 5px 0; /* Adjusted margin for smaller screens */
+        width: 100%; /* Adjusted width for smaller screens */
+        max-width: none; /* Removed max-width for smaller screens */
+        min-height: 0;
+    }
 }
