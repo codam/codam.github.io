@@ -6,6 +6,26 @@ body {
     text-align: center;
 }
 
+header {
+    margin: 15px;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+}
+
+.social-media-logo {
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+}
+
 .link {
     color: rgb(167, 58, 225);
     text-decoration: none;
@@ -30,7 +50,6 @@ body {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    /* font-size: 1.1em; */
     margin: 20px 20px;
     cursor: pointer;
     border-radius: 10px;
@@ -52,9 +71,9 @@ body {
 
 @media (max-width: 480px) {
     .list-item {
-        margin: 5px 0; /* Adjusted margin for smaller screens */
-        width: 100%; /* Adjusted width for smaller screens */
-        max-width: none; /* Removed max-width for smaller screens */
+        margin: 5px 0;
+        width: 100%;
+        max-width: none;
         min-height: 0;
     }
 }
