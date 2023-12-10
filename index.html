@@ -1,62 +1,14 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Codam's website</title>
-    <link rel="stylesheet" href="index.css">
-</head>
-<body>
-    <h1>Codam's GPTs</h1>
-    <p>Here are some GPTs I built to help you with your needs</p>
-
-    <script>
-        
-        const buttons = [
-            { text: 'Ad Creator Wizard',
-              description: 'A creative assistant for generating visual concepts for ads',
-              url: 'https://chat.openai.com/g/g-CYRU9Asul-ad-creator-wizard'
-            },
-            { text: 'Ad Visual Creator',
-              description: 'Expert in creating images for digital ads',
-              url: 'https://chat.openai.com/g/g-HctjmeMnT-ad-visuals-creator'
-            },
-            { text: 'Landing Page Architect',
-              description: 'Assistant in creating landing pages with code and content.',
-              url: 'https://chat.openai.com/g/g-AKukSqOWr-landing-page-architect'
-            },
-            { text: 'Resume Reviewer',
-              description: 'Expert in enhancing resumes with detailed, inclusive feedback',
-              url: 'https://chat.openai.com/g/g-YRb19XEy4-resume-reviewer'
-            },
-            { text: "The Hitchhiker's Guide to the Galaxy",
-              description: "Douglas Adams-style encyclopedia of 'The Hitchhiker's Guide to the Galaxy.'",
-              url: 'https://chat.openai.com/g/g-nWvT4txkO-the-hitchhiker-s-guide-to-the-galaxy'
-            },
-        ];
-
-        function navigateToLink(link) {
-            window.location.href = link;
-        }
-
-        window.onload = function() {
-            const container = document.body;
-            const ul = document.createElement('ul');
-            ul.className = "linkList";
-            
-            buttons.forEach(button => {
-                const li = document.createElement('li');
-                const link = document.createElement('a');
-                li.className = 'list-item';
-                link.textContent = button.text;
-                link.href = button.url;
-                link.className = 'link';
-                li.appendChild(link);
-                ul.appendChild(li);
-            });
-            
-            container.appendChild(ul);
-        };
-    </script>
-
-</body>
+    <head>
+        <title>Codam's website</title>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <h1>Codam's GPTs</h1>
+        <p>Here are some GPTs I built to help you with your needs.</p>
+        <p>I hope you'll enjoy them!</p>
+        <p>Built by <a class="link" href="https://x.com/followthesol">@followthesol</a></p>
+        <script src="index.js"></script>
+    </body>
 </html>
-
